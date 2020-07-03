@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>明途知产</title>
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
 </head>
 <body>
     <header>
@@ -12,6 +14,7 @@
         </div>
     </header>
     <section >
+        <a href="info.html">注册信息</a>
         <div class="brand_type">
             <img src="image/hot_trademark.png">
         </div>
@@ -20,21 +23,22 @@
                 <img src="image/reg_head.png">
             </div>
             <div class="reg_body">
+                <form action="" method="post"  >
                     <p class="in_style">
                         <img src="image/reg_country.png">
                         <input name="country" class="inputStyle1" placeholder="注册国家">
                     </p>
                     <p class="in_style">
-                        <form action="" method="post">
-                    <p class="in_style">
                         <img src="image/brandName.png">
                         <input name="brandName" class="inputStyle1" placeholder="商标">
                     </p>
+                    <p class="in_style">
                         <img src="image/reg_phone.png">
                         <input name="phone" class="inputStyle1" placeholder="电话">
                     </p>
                     <p>
-                        <input type="image" src="image/submit.png" name="submit" class="submit" >
+                        <input type="button" src="image/submit.png" name="submit" class="submit" value="注册" onclick="reg()" >
+                        <!--<input type="button"  name="submit"  onclick="reg()" >-->
                     </p>
                     <p style="font-size: 12px;color: gray;">查询结果会以短信的形式发送到手机请注意查收</p>
                 </form>
